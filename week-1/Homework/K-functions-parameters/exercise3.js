@@ -1,5 +1,11 @@
 // Write your function here
 
-var greeting = createGreeting("Daniel");
 
-console.log(greeting);
+function newGreeting(greeting, name){
+    const greetingFromX = greeting + name;
+    return (greetingFromX);
+
+}
+console.log(newGreeting("Hello, my name is", " Daniel "));
+    
+
