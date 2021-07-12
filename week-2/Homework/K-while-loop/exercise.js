@@ -9,6 +9,16 @@
 let n = 10;
 
 function sumTillNum(num){
+	let result = 0;
+	let index = 0;
+	while (index <= num) {
+		result = result + index;
+		index = index + 1;
+
+	
+	}
+	return result
+	
 	//your code here
 }
 
