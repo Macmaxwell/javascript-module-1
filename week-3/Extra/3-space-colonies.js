@@ -8,8 +8,17 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
+function colonisers(arrayOfVoyagers) { 
+  const result = arrayOfVoyagers.filter((voyager) => {
+  const voyagerAsArray = voyager.split(" ");
+  console.log(voyagerAsArray);
 
+  return ( 
+   voyagerAsArray[0].charAt(0) == "A" && voyagerAsArray.includes("family"));
+
+})
+
+return result;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -29,7 +38,7 @@ const voyagers = [
   "Archer family"
 ];
 
-const util = require('util');
+const util =require ('util');
 
 function test(test_name, actual, expected) {
     let status;

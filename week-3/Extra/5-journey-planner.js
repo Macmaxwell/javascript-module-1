@@ -7,7 +7,8 @@
   NOTE: only the names should be returned, not the means of transport.
 */
 
-function journeyPlanner() {
+function journeyPlanner(arrayOfLocations, transportForm) {
+  return arrayOfLocations.filter((location) => location.includes(transportForm)).map((location) => location[0]);
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
